@@ -7,8 +7,8 @@ from elevenlabs import play
 from tempfile import NamedTemporaryFile
 
 # ✅ set your keys
-os.environ["ASSEMBLYAI_API_KEY"] = "41d54d9279a34b9e81483ef23f75a49c"
-os.environ["ELEVENLABS_API_KEY"] = "sk_6c0073c2dea9fa847a44ecdb3be14769376dea6cd9e319d5"
+os.environ["ASSEMBLYAI_API_KEY"] = "" 
+os.environ["ELEVENLABS_API_KEY"] = ""
 
 # ✅ init clients
 aai.settings.api_key = os.getenv("ASSEMBLYAI_API_KEY")
@@ -16,9 +16,9 @@ client = ElevenLabs(api_key=os.getenv("ELEVENLABS_API_KEY"))
 
 # ✅ language to voice id mapping
 VOICE_IDS = {
-    "en": "kPzsL2i3teMYv0FxEYQ6",
+    "en": "kPzsL2i3teMYv0FxEYQ6", # get your voice ids from eleven labs
     "ar": "B5xxC4eQoOFJnY4R5XkI",
-    "zh-CN":"kPzsL2i3teMYv0FxEYQ6",  # still English voice but correct key
+    "zh-CN":"kPzsL2i3teMYv0FxEYQ6",  
     "ur": "XzM6ifF57Bo5L0jHJHrz",
 }
 
